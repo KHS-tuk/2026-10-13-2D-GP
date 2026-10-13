@@ -7,6 +7,7 @@ import random
 boy = grass = team = zombie = falling_ball = None
 world = []
 running = True
+random_size = (21, 41)
 
 # 게임 객체를 파악.
 # boy, grass가 필요하다.
