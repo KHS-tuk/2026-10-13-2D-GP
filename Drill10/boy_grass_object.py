@@ -77,8 +77,8 @@ class Ball:
 
     def update(self):
         self.y -= self.speed * 2
-        if(self.y <= 50):
-            self.y = 50
+        if(self.y <= grass.y + grass.image.h // 2):
+            self.y = grass.y + grass.image.h // 2
         
 
 def handle_events():
