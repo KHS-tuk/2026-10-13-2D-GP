@@ -63,12 +63,13 @@ class Ball:
         self.image = load_image('ball21x21.png')
         self.x = random.randint(100, 700)
         self.y = 599
+        self.speed = random.randint(1, 10)
 
     def draw(self):
         self.image.clip_draw(0, 0, self.image.w, self.image.h, self.x, self.y)
 
     def update(self):
-        self.y -= 2
+        self.y -= self.speed * 2
         
 
 def handle_events():
