@@ -93,6 +93,9 @@ def reset_world():
 
     zombie = [Zombie() for j in range(3)]
     world.extend(zombie)
+
+    falling_ball = Ball()
+    world.append(falling_ball)
    
 
 def update_world():
