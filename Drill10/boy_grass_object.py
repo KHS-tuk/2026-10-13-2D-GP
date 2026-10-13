@@ -70,6 +70,8 @@ class Ball:
 
     def update(self):
         self.y -= self.speed * 2
+        if(self.y <= 50):
+            self.y = 50
         
 
 def handle_events():
