@@ -4,7 +4,7 @@ import random
 
 # Game object class here
 
-boy = grass = team = zombie = ball = None
+boy = grass = team = zombie = falling_ball = None
 world = []
 running = True
 
@@ -58,12 +58,14 @@ class Zombie:
         if self.x > 800:
             self.x = 0
 
-class ball:
+class Ball:
     def __init__(self):
-        pass
+        self.image = load_image('ball21x21.png')
+        self.x = random.randint(100, 700)
+        self.y = 599
 
     def draw(self):
-        pass
+        self.image.draw(self.x, self.y)
 
     def update(self):
         pass
