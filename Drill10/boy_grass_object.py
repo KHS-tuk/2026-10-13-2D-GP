@@ -65,10 +65,10 @@ class Ball:
         self.y = 599
 
     def draw(self):
-        self.image.draw(self.x, self.y)
+        self.image.clip_draw(0, 0, self.image.w, self.image.h, self.x, self.y)
 
     def update(self):
-        pass
+        self.y -= 2
         
 
 def handle_events():
