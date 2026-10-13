@@ -4,12 +4,12 @@ import random
 
 # Game object class here
 
-boy = grass = team = zombie = None
+boy = grass = team = zombie = ball = None
 world = []
 running = True
 
 # 게임 객체를 파악.
-# oby, grass가 필요하다.
+# boy, grass가 필요하다.
 class Grass:
     def __init__(self):
         self.image = load_image('grass.png')
@@ -57,6 +57,9 @@ class Zombie:
         self.x += self.speed * 2
         if self.x > 800:
             self.x = 0
+
+class ball:
+    pass
         
 
 def handle_events():
