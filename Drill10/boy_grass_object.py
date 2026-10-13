@@ -14,9 +14,11 @@ random_size = (21, 41)
 class Grass:
     def __init__(self):
         self.image = load_image('grass.png')
+        self.y = 30
+        self.h = self.image.h
 
     def draw(self):
-        self.image.draw(400, 30)
+        self.image.draw(400, self.y)
 
     def update(self):
         pass
